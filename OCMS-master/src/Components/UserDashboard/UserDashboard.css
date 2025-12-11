@@ -1,0 +1,145 @@
+.dashboard-container {
+  width: 100%;
+  padding-top: 80px;
+  padding: 40px 6%;
+  background: #f8f9fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.profile-btn {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.profile-btn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 18px;
+  border-left: 5px solid #4a90e2;
+  padding-left: 12px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.course-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  border-top: 4px solid #4a90e2;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.course-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.enroll-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #4a90e2, #357bd8);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background: linear-gradient(135deg, #357bd8, #266ac7);
+}
+
+
+.message {
+  background: #e3f4ff;
+  color: #0664a3;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 15px;
+  border-left: 4px solid #4a90e2;
+}
+
+.enrolled-text {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #dfffe0;
+  color: #15803d;
+  border-left: 4px solid #22c55e;
+  width: fit-content;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .course-card {
+    padding: 18px;
+  }
+
+  .enroll-btn {
+    font-size: 15px;
+  }
+}
